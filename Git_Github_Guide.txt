@@ -1,0 +1,42 @@
+# Create a GitHub account: https://github.com/
+# install Git on your own PC: 
+    - Using cmd:  choco install git
+    - Download and install by GUI : https://www.git-scm.com/downloads
+# Git config:
+    * Set your username for every repository
+            git config --global user.name "<your_user_name>"
+            ex: git config --global user.name "Le Dinh Nghiem"
+    * Set your email ( same email as your github account)
+            git config --global user.email "<your_email_on_Github>"
+    * Check Git Config:
+            git config --list
+
+# Initialize an empty Git repository in current folder:
+        git init
+
+# Create remote repository on your GitHub: https://github.com/Nghiemld93
+        see image1
+# Change state of current folder to master
+        git config --global --add safe.directory bath_of_folder
+        ex: 
+        git config --global --add safe.directory A:/5_Research_Project/Project3_Mr.Nghiem/Learning_Git
+# Link local repository ( your own PC) with remote repository ( with repository that you create on your Github)
+        git remote add origin https://github.com/Nghiemld93/Git_Github_Tutorial.git
+
+######################################################
+Working with folders on your local PC like normal( create...remove...change...your files)
+
+######################################################
+add / commit / check status/ push local repository on remote repository
+
+# (Save) Add changes to Staging area (index) 
+        - add specific folders/files
+                git add <file.name>
+                ex:
+                git add Git_Github_Tutorial.txt
+        - add all files/folders
+                git add .
+
+
+
+######################################################
