@@ -10,6 +10,11 @@
             git config --global user.email "<your_email_on_Github>"
     * Check Git Config:
             git config --list
+# delete a line in config file:
+        git config --global --unset <content of whole line you want to delete>
+        
+        ex: 
+        git config --global --unset remote.origin.url=https://github.com/Nghiemld93/Git_Github_Tutorial.git
 
 # Initialize an empty Git repository in current folder:
         git init
@@ -20,6 +25,7 @@
         git config --global --add safe.directory bath_of_folder
         ex: 
         git config --global --add safe.directory A:/5_Research_Project/Project3_Mr.Nghiem/Learning_Git
+
 # Link local repository ( your own PC) with remote repository ( with repository that you create on your Github)
         git remote add origin https://github.com/Nghiemld93/Git_Github_Tutorial.git
 
