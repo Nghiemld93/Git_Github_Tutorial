@@ -16,12 +16,14 @@
         ex: 
         git config --global --unset remote.origin.url=https://github.com/Nghiemld93/Git_Github_Tutorial.git
 
+
+#############################################################################
 # Initialize an empty Git repository in current folder:
         git init
 
 # Create remote repository on your GitHub: https://github.com/Nghiemld93
         see image1
-# Change state of current folder to master
+# ** Change state of current folder to master ** 
         git config --global --add safe.directory bath_of_folder
         ex: 
         git config --global --add safe.directory A:/5_Research_Project/Project3_Mr.Nghiem/Learning_Git
@@ -35,6 +37,9 @@ Working with folders on your local PC like normal( create...remove...change...yo
 ######################################################
 add / commit / check status/ push local repository on remote repository
 
+# check status anytime you want
+        git status
+
 # (Save) Add changes to Staging area (index) 
         - add specific folders/files
                 git add <file.name>
@@ -42,12 +47,31 @@ add / commit / check status/ push local repository on remote repository
                 git add Git_Github_Tutorial.txt
         - add all files/folders
                 git add .
-
+                                                # remove a files/folder that saved to Staging area
+                                                        git remove <file/folder_name>
 # Save Snapshots the file in preparation for versioning
         git commit -m "descriptive message"
+        
+        Change commit message
+        git commit --amend -m "new descriptive message"
 
 # Push new file commited on remote repository
         git push origin master
 (Easy with Windown but there are some issues with linux and MacOS, see link below to fix it:
  https://www.youtube.com/watch?v=z9kQAOPXayc)
 ######################################################
+# check commit
+        git log
+        git log --oneline
+# check compare the different commit together
+######################################################
+
+# download folder on remote repository of anyone
+        git clone <link_of_remote_repository>
+
+######################################################
+
+# pull new thing from remote repository to your own computer
+        git fetch               % to get (fetch ) information from remote repository to your PC
+        git status              % check again state in folder
+        
