@@ -74,4 +74,6 @@ add / commit / check status/ push local repository on remote repository
 # pull new thing from remote repository to your own computer
         git fetch               % to get (fetch ) information from remote repository to your PC
         git status              % check again state in folder
-        
+        git pull <remote_name> <branch_name>
+        ex:
+        git pull origin master
