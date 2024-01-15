@@ -37,6 +37,11 @@ add / commit / check status/ push local repository on remote repository
         - add all files/folders
                 git add .
 
+# Save Snapshots the file in preparation for versioning
+        git commit -m "descriptive message"
 
-
+# Push new file commited on remote repository
+        git push origin master
+(Easy with Windown but there are some issues with linux and MacOS, see link below to fix it:
+ https://www.youtube.com/watch?v=z9kQAOPXayc)
 ######################################################
